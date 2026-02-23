@@ -4,7 +4,7 @@ from .models import StockItem
 
 class AddStockForm(forms.ModelForm):
     """
-    A form for adding new stock items.
+    A form to add new stock items.
     """
     class Meta:
         model = StockItem
