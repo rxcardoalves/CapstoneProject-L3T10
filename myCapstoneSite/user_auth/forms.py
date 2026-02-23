@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 class UserRegistrationForm(UserCreationForm):
     """
-    A form for registering a new user with additional fields for first
+    A form to registering a new user with additional fields for first
     name, last name, and email. Inherits from Django's built-in
     UserCreationForm to handle user authentication and password fields.
 
