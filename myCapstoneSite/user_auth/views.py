@@ -35,7 +35,7 @@ def authenticate_user(request):
     Authenticate a user using the provided username and password.
 
     This view checks if the provided credentials (username and password)
-    match a user in the database. If the user exists and credentials are
+    match a user in the database. If the user exists, and credentials are
     valid, the user is logged in and redirected to their profile page.
     Otherwise, they are redirected back to the login page.
     """
