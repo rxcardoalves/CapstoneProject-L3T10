@@ -1,35 +1,58 @@
 # Django Capstone Project
 
-## Setup with Virtual Environment
+## Clone the Repository
+
+```bash
+git clone https://github.com/rxcardoalves/CapstoneProject-L3T10.git
+cd myCapstoneSite
+```
+
+---
+
+# Run with Virtual Environment
 
 ```bash
 python -m venv venv
-venv\Scripts\activate   # Windows
+
+# Windows
+venv\Scripts\activate
+
 pip install -r requirements.txt
+
+python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
 
+Open:
+http://127.0.0.1:8000
+
 ---
 
-## Run with Docker
+# Run with Docker
 
 ```bash
-docker build -t mycapstone .
-docker run -p 8000:8000 mycapstone
+docker build -t mycapstonesite .
+docker run -p 8000:8000 mycapstonesite
 ```
 
-Then open:
+Open:
 http://localhost:8000
 
 ---
 
-## Environment Variables / Secrets
+# User Access
 
-This project may require secrets such as:
+The application includes admin user registration.
 
-- Django SECRET_KEY
-- Database credentials
+You can log in with this test user account:
+Username: hypdev2
+Password: RS24060015065
 
-Create a `.env` file and add them manually.
-Do NOT commit this file.
+
+```bash
+python manage.py createsuperuser
+```
+
+Login at:
+http://127.0.0.1:8000/admin
