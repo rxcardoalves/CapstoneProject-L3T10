@@ -49,10 +49,5 @@ You can log in with this test user account:
 Username: hypdev2
 Password: RS24060015065
 
-
-```bash
-python manage.py createsuperuser
-```
-
 Login at:
 http://127.0.0.1:8000/admin
